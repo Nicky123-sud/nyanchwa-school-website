@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nyanchwa Adventist Preparatory School - Quality Christian Education in Kisii Central. Private primary school offering excellent academics and holistic child development.">
+    <meta name="keywords" content="Nyanchwa School, Adventist School Kisii, Private Primary School Kisii, Nyaribari Chache Schools">
+    <title>Nyanchwa Adventist Preparatory School | Home</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap"></i>
+                Nyanchwa Adventist Primary School (NAPS)
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activities.html">Co-Curricular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-slider">
+        <img src="assets/images/hero.jpg.jpeg" class="hero-image active" alt="">
+        <img src="assets\images\WhatsApp Image 2026-01-14 at 6.11.17 PM.jpeg" class="hero-image" alt="">
+        <img src="assets\images\WhatsApp Image 2026-01-14 at 6.11.19 PM.jpeg" class="hero-image" alt="">
+        <!-- Add more images here -->
+    </div>
+    <div class="container hero-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="mb-4">Excellence in Christian Education</h1>
+                <p class="lead">Nurturing young minds with quality education, strong values, and Christ-centered learning in the heart of Kisii Central</p>
+                <div class="hero-buttons mt-4">
+                    <a href="admissions.html" class="btn btn-gold btn-lg">Enroll Now</a>
+                    <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+.hero {
+    position: relative;
+    height: 500px; /* adjust height */
+    overflow: hidden;
+}
+
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-image.active {
+    opacity: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+</style>
+
+<!-- JavaScript -->
+<script>
+const slides = document.querySelectorAll('.hero-image');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}, 3000); // 3000ms = 3 seconds
+</script>
+
+
+    <!-- QUICK STATS -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-item">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h3 class="text-maroon">500+</h3>
+                        <p>Students Enrolled</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-item">
+                        <i class="fas fa-chalkboard-teacher feature-icon"></i>
+                        <h3 class="text-maroon">35+</h3>
+                        <p>Qualified Teachers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-item">
+                        <i class="fas fa-trophy feature-icon"></i>
+                        <h3 class="text-maroon">20+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-item">
+                        <i class="fas fa-star feature-icon"></i>
+                        <h3 class="text-maroon">98%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WELCOME SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="assets\images\WhatsApp Image 2026-01-14 at 6.11.28 PM (1).jpeg" alt="Nyanchwa School Building" class="img-fluid img-rounded img-shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Welcome to Nyanchwa Adventist Preparatory School</h2>
+                    <p>Located in the vibrant community of Kisii Central, Nyaribari Chache Constituency, Nyanchwa Adventist Preparatory School stands as a beacon of quality Christian education in the region.</p>
+                    <p>Since our establishment, we have been committed to providing a nurturing environment where children develop academically, spiritually, socially, and physically. Our dedicated team of qualified educators ensures that every child receives personalized attention and the tools they need to succeed.</p>
+                    <p>We believe in holistic education that combines academic excellence with strong Christian values, preparing our students not just for exams, but for life.</p>
+                    <a href="about.html" class="btn btn-primary mt-3">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section bg-maroon">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Why Choose Nyanchwa?</h2>
+                <p class="text-white opacity-75">We provide more than just education - we build character and nurture potential</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <i class="fas fa-book-open feature-icon"></i>
+                        <h4>Academic Excellence</h4>
+                        <p>Comprehensive curriculum aligned with CBC standards, delivered by qualified and passionate teachers committed to student success.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <i class="fas fa-pray feature-icon"></i>
+                        <h4>Christian Values</h4>
+                        <p>Christ-centered learning environment that integrates faith with education, building strong moral foundations for life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <i class="fas fa-child feature-icon"></i>
+                        <h4>Holistic Development</h4>
+                        <p>Balanced approach to education focusing on intellectual, spiritual, physical, and social growth of every child.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <i class="fas fa-user-friends feature-icon"></i>
+                        <h4>Small Class Sizes</h4>
+                        <p>Personalized attention with manageable student-teacher ratios ensuring every child's needs are met effectively.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <i class="fas fa-laptop feature-icon"></i>
+                        <h4>Modern Facilities</h4>
+                        <p>Well-equipped classrooms, library, science laboratory, computer lab, and spacious playgrounds for comprehensive learning.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <i class="fas fa-futbol feature-icon"></i>
+                        <h4>Co-Curricular Activities</h4>
+                        <p>Diverse programs in sports, music, drama, and clubs that develop talents and build confidence beyond the classroom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS OVERVIEW -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Programs</h2>
+                <p class="section-subtitle">Quality education from early years through primary school</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="badge-custom badge-gold mb-3">Pre-Primary</span>
+                            <h4 class="card-title">PP1 & PP2</h4>
+                            <p class="card-text">Foundation years focusing on play-based learning, early literacy, numeracy, and social skills development in a safe and caring environment.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-green me-2"></i>Play-based learning</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Early literacy & numeracy</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Social skills development</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Creative activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="badge-custom badge-green mb-3">Lower Primary</span>
+                            <h4 class="card-title">Grade 1-3</h4>
+                            <p class="card-text">Building strong foundations in core subjects while developing critical thinking, creativity, and problem-solving skills through engaging activities.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-green me-2"></i>Core subject mastery</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Reading proficiency</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Mathematical reasoning</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Environmental awareness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="badge-custom badge-maroon mb-3">Upper Primary</span>
+                            <h4 class="card-title">Grade 4-6</h4>
+                            <p class="card-text">Advanced learning preparing students for secondary education with emphasis on academic excellence, leadership, and character development.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-green me-2"></i>CBC curriculum mastery</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Leadership development</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Project-based learning</li>
+                                <li><i class="fas fa-check text-green me-2"></i>Exam preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST NEWS -->
+    <section class="section bg-off-white">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest News & Events</h2>
+                <p class="section-subtitle">Stay updated with what's happening at Nyanchwa</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="assets\images\about-header.jpg.jpeg" class="card-img-top" alt="Term Opening">
+                        <div class="card-body">
+                            <span class="badge-custom badge-green mb-2">Announcement</span>
+                            <h5 class="card-title">Term 1 2026 Opening</h5>
+                            <p class="card-text">We welcome all students back for the first term of 2026. Classes commence on January 20th. Please ensure all requirements are met.</p>
+                            <small class="text-muted"><i class="far fa-calendar me-2"></i>January 15, 2026</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="assets\images\sports.jpeg" class="card-img-top" alt="Sports Day">
+                        <div class="card-body">
+                            <span class="badge-custom badge-gold mb-2">Event</span>
+                            <h5 class="card-title">Annual Sports Day Success</h5>
+                            <p class="card-text">Our annual sports day was a tremendous success with students showcasing their athletic talents. Congratulations to all participants!</p>
+                            <small class="text-muted"><i class="far fa-calendar me-2"></i>December 10, 2025</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="assets\images\about-header.jpg.jpeg" class="card-img-top" alt="Admissions Open">
+                        <div class="card-body">
+                            <span class="badge-custom badge-maroon mb-2">Admissions</span>
+                            <h5 class="card-title">2026 Admissions Open</h5>
+                            <p class="card-text">We are now accepting applications for 2026. Limited spaces available. Visit our admissions office or apply online today.</p>
+                            <small class="text-muted"><i class="far fa-calendar me-2"></i>January 5, 2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="news.html" class="btn btn-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Parents Say</h2>
+                <p class="section-subtitle">Hear from our satisfied parents and guardians</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                            </div>
+                            <p class="card-text">"Nyanchwa has transformed my child's academic journey. The teachers are caring, professional, and truly invested in each student's success. I couldn't ask for a better school."</p>
+                            <div class="mt-3">
+                                <strong class="text-maroon">Mrs. Jane Moraa</strong>
+                                <p class="mb-0 small text-muted">Parent, Grade 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                            </div>
+                            <p class="card-text">"The Christian values taught here have helped shape my children into responsible and respectful individuals. The academic excellence is just the cherry on top!"</p>
+                            <div class="mt-3">
+                                <strong class="text-maroon">Mr. David Omondi</strong>
+                                <p class="mb-0 small text-muted">Parent, PP2 & Grade 6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                                <i class="fas fa-star text-gold"></i>
+                            </div>
+                            <p class="card-text">"Outstanding co-curricular programs! My daughter has discovered her love for music and drama here. The school truly nurtures every child's unique talents."</p>
+                            <div class="mt-3">
+                                <strong class="text-maroon">Mrs. Grace Kemunto</strong>
+                                <p class="mb-0 small text-muted">Parent, Grade 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section bg-green text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">Ready to Join Our Community?</h2>
+                    <p class="lead mb-4">Give your child the gift of quality Christian education. Enroll today and be part of the Nyanchwa family where excellence meets values.</p>
+                    <a href="admissions.html" class="btn btn-gold btn-lg me-3">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Nyanchwa Adventist Preparatory School</h5>
+                    <p class="mb-3"><em>"Excellence in Christian Education"</em></p>
+                    <p>Nurturing young minds with quality education, strong Christian values, and holistic development in Kisii Central.</p>
+                    <div class="footer-social mt-4">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="activities.html">Co-Curricular</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">School Calendar</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Kisii Central, Nyaribari Chache<br>
+                            <span class="ms-4">Kisii County, Kenya</span>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +254 712 345 678
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@nyanchwaschool.ac.ke
+                        </li>
+                        <li>
+                            <i class="fas fa-clock me-2"></i>
+                            Mon - Fri: 7:00 AM - 5:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 Nyanchwa Adventist Preparatory School. All Rights Reserved. | Designed with <i class="fas fa-heart text-gold"></i> for Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary" style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
